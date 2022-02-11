@@ -3,9 +3,7 @@ import compression from "compression";  // compresses requests
 import lusca from "lusca";
 import path from "path";
 import mongoose from "mongoose";
-import { MONGODB_URI, SESSION_SECRET } from "./util/secrets";
-
-import * as homeController from "./controllers/home";
+import { MONGODB_URI } from "./util/secrets";
 
 const app = express();
 
@@ -32,6 +30,8 @@ app.use(
     express.static(path.join(__dirname, "public"), { maxAge: 31557600000 })
 );
 
-app.get("/", homeController.index);
+app.get("/", (req, res) => {
+    res.send("App is running");
+});
 
 export default app;
