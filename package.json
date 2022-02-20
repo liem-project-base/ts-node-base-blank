@@ -1,12 +1,12 @@
 {
-  "name": "express-typescript-starter",
+  "name": "ts-node-base-blank",
   "version": "0.1.0",
   "description": "A starting point for Node.js express apps with TypeScript",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/TypeScript-Node-Starter"
+    "url": "https://github.com/liem-project-base/ts-node-base-blank"
   },
-  "author": "Bowden Kelly",
+  "author": "Liam Lee",
   "license": "MIT",
   "scripts": {
     "build-ts": "tsc",
@@ -30,7 +30,7 @@
     "express": "4.17.1",
     "lodash": "^4.17.21",
     "lusca": "1.6.1",
-    "mongoose": "5.11.15",
+    "mongoose": "^6.2.2",
     "winston": "3.3.3"
   },
   "devDependencies": {

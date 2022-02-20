@@ -9,7 +9,7 @@ const app = express();
 
 const mongoUrl = MONGODB_URI;
 
-mongoose.connect(mongoUrl, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true } ).then(
+mongoose.connect(mongoUrl ).then(
     () => { /** ready to use. The `mongoose.connect()` promise resolves to undefined. */ 
     console.log("Mongodb is ready to use");
 },
